@@ -1,3 +1,14 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@font-face {
+    font-family: 'FoundersGrotesk-Semibold';
+    src: url('../public/fonts/TestFoundersGroteskX-Condensed-Semibold-BF66175e972a7d6.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+  }
+  
+  .masker {
+    font-family: 'FoundersGrotesk-Semibold', sans-serif;
+  }
