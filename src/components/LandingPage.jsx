@@ -1,3 +1,4 @@
+import { motion } from 'framer-motion';
 import React from 'react'
 import { FaArrowUpLong } from "react-icons/fa6";
 
@@ -8,8 +9,8 @@ const LandingPage = () => {
             {["We Create","Eye-Opening","Presentations"].map((item,index)=>{
                 return  (<div className='masker'>
                           <div className='w-fit flex items-end '>
-                            {index === 1 && <div className='mr-[1vw] w-[7vw] rounded-md h-[5vw] -top-[-1vw] relative bg-green-500'>
-                              </div>}
+                            {index === 1 && <motion.div initial={{width: 0}} animate={{width: "7vw"}} transition={{ease: [0.76, 0, 0.24, 1], duration: 1}} className='mr-[1vw] w-[7vw] rounded-md h-[5vw] -top-[-1vw] relative bg-green-500'>
+                              </motion.div>}
                             <h1 className='pt-[2vw] -mb-[1vw] uppercase text-[8vw] leading-[.75]'>{item}</h1>                                    
                           </div>
                         </div>)
